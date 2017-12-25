@@ -67,3 +67,21 @@
 
   		return array($firstday,$lastday);
 	}
+
+	
+	/**
+	 * 检查字符串包含字符串
+	 * @param  string $str    包含的字符串
+	 * @param  string $target 检查字符串
+	 * @return boolen
+	 */
+	function checkStr($str,$target) {
+	   	$tmpArr = explode($str,$target);   // var_dump($tmpArr);die();
+	    if(count($tmpArr)>1)
+	    	return true;
+	    else 
+	    	return false; 
+	}
+	// $result = checkStr("sdfs","sdfsldkfj");
+	// var_dump($result); 
+	
